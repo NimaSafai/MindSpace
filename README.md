@@ -1,55 +1,102 @@
-# React + TypeScript + Vite
+# 🧠 MindSpace – Journal & Mood Tracker (Frontend Only)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+MindSpace is a calming, personal journaling app built with **React + TypeScript** and styled using **Styled Components**. This version focuses solely on the **frontend**, allowing users to write daily journal entries, tag their mood, and revisit past entries — all stored locally in the browser.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- 📝 Write and save journal entries
+- 😄 Select your current mood (happy, sad, anxious, etc.)
+- 💾 Entries are saved using `localStorage`
+- 🎨 Clean and modern UI with Styled Components
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📸 Preview
+
+> _Add screenshots or a GIF here once you have the UI built!_
+
+---
+
+## 🚀 Tech Stack
+
+- **React** with **TypeScript**
+- **Styled Components** for styling
+- **localStorage** for data persistence
+- **UUID** for unique entry IDs
+
+---
+
+## 🛠️ Getting Started
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/your-username/mindspace.git
+cd mindspace
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2. Install dependencies
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+npm install
 ```
-# MindSpace-FE
+
+### 3. Run the app
+
+```bash
+npm run dev
+```
+
+> The app should now be running at `http://localhost:5173` (if using Vite).
+
+---
+
+## 📁 Project Structure
+
+```bash
+src/
+│
+├── components/          # Reusable UI components
+│   ├── EntryForm.tsx
+│   ├── JournalEntryCard.tsx
+│   └── MoodSelector.tsx
+│
+├── pages/
+│   └── JournalPage.tsx  # Main journal feature page
+│
+├── types/
+│   └── journal.ts       # Journal entry & mood types
+│
+├── utils/
+│   └── journalStorage.ts  # Handles localStorage logic
+│
+└── App.tsx / main.tsx   # App entry point
+```
+
+---
+
+## 🧪 Features to Add Next
+
+Here are some suggested next steps:
+
+- ✅ Edit / Delete entries
+- 🔍 Filter entries by mood
+- 📈 Mood analytics page (charts or calendar view)
+- 🔐 Add authentication (if backend is added)
+- ☁️ Sync with backend or cloud storage
+
+---
+
+## 📜 License
+
+MIT – Free to use, customize, and grow.
+
+---
+
+## 💬 Feedback / Ideas?
+
+Feel free to open an issue or feature request!
+
+> This is a passion project to grow React + TypeScript skills — have fun building it! 🚀
