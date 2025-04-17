@@ -13,43 +13,12 @@ MindSpace is a calming, personal journaling app built with **React + TypeScript*
 
 ---
 
-## 📸 Preview
-
-> _Add screenshots or a GIF here once you have the UI built!_
-
----
-
 ## 🚀 Tech Stack
 
 - **React** with **TypeScript**
 - **Styled Components** for styling
 - **localStorage** for data persistence
 - **UUID** for unique entry IDs
-
----
-
-## 🛠️ Getting Started
-
-### 1. Clone the repo
-
-```bash
-git clone https://github.com/your-username/mindspace.git
-cd mindspace
-```
-
-### 2. Install dependencies
-
-```bash
-npm install
-```
-
-### 3. Run the app
-
-```bash
-npm run dev
-```
-
-> The app should now be running at `http://localhost:5173` (if using Vite).
 
 ---
 
@@ -74,18 +43,6 @@ src/
 │
 └── App.tsx / main.tsx   # App entry point
 ```
-
----
-
-## 🧪 Features to Add Next
-
-Here are some suggested next steps:
-
-- ✅ Edit / Delete entries
-- 🔍 Filter entries by mood
-- 📈 Mood analytics page (charts or calendar view)
-- 🔐 Add authentication (if backend is added)
-- ☁️ Sync with backend or cloud storage
 
 ---
 
