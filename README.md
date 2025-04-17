@@ -22,30 +22,6 @@ MindSpace is a calming, personal journaling app built with **React + TypeScript*
 
 ---
 
-## 📁 Project Structure
-
-```bash
-src/
-│
-├── components/          # Reusable UI components
-│   ├── EntryForm.tsx
-│   ├── JournalEntryCard.tsx
-│   └── MoodSelector.tsx
-│
-├── pages/
-│   └── JournalPage.tsx  # Main journal feature page
-│
-├── types/
-│   └── journal.ts       # Journal entry & mood types
-│
-├── utils/
-│   └── journalStorage.ts  # Handles localStorage logic
-│
-└── App.tsx / main.tsx   # App entry point
-```
-
----
-
 ## 📜 License
 
 MIT – Free to use, customize, and grow.
